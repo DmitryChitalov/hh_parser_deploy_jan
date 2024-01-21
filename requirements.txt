@@ -3,3 +3,4 @@ sqlalchemy
 requests
 gunicorn
 flask-table
+MarkupSafe==1.1.1
