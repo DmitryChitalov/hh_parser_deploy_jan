@@ -4,7 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 import configparser as cfg
 
 config_db = cfg.ConfigParser()
-config_db.read("../web_app/hh_config.ini")
+config_db.read("./hh_parser/hh_config.ini")
 engine = create_engine(config_db["SQLite"]["path"])
 Session = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 db_session = Session()

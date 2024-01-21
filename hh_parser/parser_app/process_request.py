@@ -5,7 +5,7 @@ import time
 import json
 from sqlalchemy import desc
 
-from ..web_app.models import Request
+from hh_parser.models import Request
 
 import requests as req
 

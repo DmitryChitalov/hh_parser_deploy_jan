@@ -8,7 +8,7 @@ from .database import db_session
 def main():
     # Читаем конфигурационные параметры
     config = cfg.ConfigParser()
-    config.read("../web_app/hh_config.ini")
+    config.read("./hh_parser/hh_config.ini")
     sqlite_db = config["SQLite"]["path"]
     file_folder = config["Json"]["path"]
 

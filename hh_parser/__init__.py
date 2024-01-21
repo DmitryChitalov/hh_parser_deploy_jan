@@ -8,9 +8,9 @@ app.config.from_object(__name__)
 
 
 def create_app():
-    from .flask_parser.flask_parser import parser_blueprint
+    from hh_parser.flask_parser.flask_parser import parser_blueprint
     app.register_blueprint(parser_blueprint)
-    from .authorization.auth import auth_blueprint
+    from hh_parser.authorization.auth import auth_blueprint
     app.register_blueprint(auth_blueprint)
 
 

@@ -1,5 +1,4 @@
-from hh_parser.web_app import models
-from hh_parser.web_app import database
+from hh_parser import database
 
 if __name__ == "__main__":
     # Запросить у пользователя, нужно ли создать новую БД, удалив старую
