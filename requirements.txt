@@ -2,3 +2,4 @@ flask
 sqlalchemy
 requests
 gunicorn
+flask-table
