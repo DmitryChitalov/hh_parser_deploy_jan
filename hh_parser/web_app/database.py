@@ -7,7 +7,7 @@ from sqlalchemy.orm import sessionmaker
 from . import app
 
 config = cfg.ConfigParser()
-config.read("../web_app/hh_config.ini")
+config.read("hh_config.ini")
 engine = create_engine(config["SQLite"]["path"])
 Session = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 db_session = Session()
